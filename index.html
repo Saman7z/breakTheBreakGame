@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Brick It</title>
+</head>
+<body >
+    <button id="change-theme">Light</button>
+   <button id="rule-btn">Rules</button>
+   <div class="sidebar-container ">
+       <div class="sidebar">
+           <h1>How to Play:</h1>
+           <p class="sidebar-text">Use Your keyboard'S arrow keys to navigate to your left or right and do not let the ball to hit the ground and get the highest score AND ENJOY :)</p>
+       </div>
+       <div class="close-btn-container">
+        <button id="close-btn">close</button>
+       </div>
+      
+   </div>
+   <div class="title-text">
+       <h1>Break the Bricks</h1>
+   </div>
+   <div class="container-main">
+       <div class="main">
+           <div class="start-btn-container">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Who Are You ?">
+                <div id="error-box">Enter Your name Please</div>
+            </div>   
+            <h1 id="warning-box"></h1>
+            <h1 id="warning-box3">3</h1>
+            <h1 id="warning-box2">2</h1>
+            <h1 id="warning-box1">1</h1>
+            <h1 id="warning-winnig">You have Won hooray!</h1>
+            <button id="start-btn">Start The Game</button>
+            <h1 class="score-board-container">
+                <div class="score-board">
+                    <table id='table'>
+                     
+                        
+                    </table>
+                    <div class="clear-btn-container">
+                        <div id="clear-btn">&times;</div>
+                    </div>
+                </div>
+                
+            </h1>
+        </div>
+           <div class="reStart-btn-container">
+            <h1 class="reStart-btn-title">Game Over !</h1>   
+            <button id="reStart-btn">Restart The Game</button></div>
+           
+           <canvas id="canvas" width="800" height="500"></canvas>
+       </div>
+   </div>
+    <script src="./app.js"></script>
+</body>
+</html>
